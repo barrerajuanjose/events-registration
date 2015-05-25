@@ -1,2 +1,0 @@
-# events-registration
-Events registration
