@@ -1,0 +1,44 @@
+Organizer
+- email :string
+- pass :string
+- name :string
+- events (List :event) has_many :events
+// TODO
+- users (List :users)  has_many :users, through: :events
+
+User
+- name :string
+- email :string
+- identifier :integer
+- aditionalInfo :json
+
+Event
+- name :string
+- place :text
+- date :timestamp
+- registrationPeriod :daterange
+- type :string
+- description :text
+- organizer (:organizer) belongs_to :organizer
+- users (List :users) has_many :users
+- logo :binary
+- coverImage :binary
+- capacity :integer
+//TODO
+- backgroundColor :binary
+- contacts (List :contact)
+- tickets (List :ticket)
+- private :boolean
+
+//TODO
+Contact
+- name :string
+- email :string
+- phoneNumber :string
+- address :string
+
+Ticket
+- shortDescription :string
+- description :text
+- price :string
+- expirationDate :timestamp
