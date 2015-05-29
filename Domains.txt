@@ -7,9 +7,10 @@ Organizer
 - users (List :users)  has_many :users, through: :events
 
 User
-- name :string
+- firstName :string
+- lastName :string
 - email :string
-- identifier :integer
+- identifier :integer	
 - aditionalInfo :json
 
 Event
@@ -21,11 +22,11 @@ Event
 - description :text
 - organizer (:organizer) belongs_to :organizer
 - users (List :users) has_many :users
-- logo :binary
-- coverImage :binary
+- logo :string
+- coverImage :string
 - capacity :integer
 //TODO
-- backgroundColor :binary
+- backgroundColor :string
 - contacts (List :contact)
 - tickets (List :ticket)
 - private :boolean
