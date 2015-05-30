@@ -5,6 +5,16 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
+      <th>Place</th>
+      <th>Date</th>
+      <th>Registrationperiod</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Logo</th>
+      <th>Coverimage</th>
+      <th>Capacity</th>
+      <th>Organizer</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +22,16 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+        <td><%= event.name %></td>
+        <td><%= event.place %></td>
+        <td><%= event.date %></td>
+        <td><%= event.registrationPeriod %></td>
+        <td><%= event.type %></td>
+        <td><%= event.description %></td>
+        <td><%= event.logo %></td>
+        <td><%= event.coverImage %></td>
+        <td><%= event.capacity %></td>
+        <td><%= event.organizer %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,1 +1,1 @@
-json.extract! @event, :id, :created_at, :updated_at
+json.extract! @event, :id, :name, :place, :date, :registrationPeriod, :type, :description, :logo, :coverImage, :capacity, :organizer_id, :created_at, :updated_at
