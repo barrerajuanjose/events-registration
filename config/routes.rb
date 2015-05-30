@@ -32,8 +32,7 @@ Rails.application.routes.draw do
   #     resource :seller
   #   end
   resources :organizers do
-    resources :events do
-    end
+    resources :events
   end
 
   # Example resource route with more complex sub-resources:
