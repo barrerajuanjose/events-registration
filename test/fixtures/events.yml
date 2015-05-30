@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  place: MyText
+  date: 2015-05-30 09:35:42
+  registrationPeriod: 
+  type: 
+  description: MyText
+  logo: MyString
+  coverImage: MyString
+  capacity: 1
+  organizer_id: 
+
+two:
+  name: MyString
+  place: MyText
+  date: 2015-05-30 09:35:42
+  registrationPeriod: 
+  type: 
+  description: MyText
+  logo: MyString
+  coverImage: MyString
+  capacity: 1
+  organizer_id: 
